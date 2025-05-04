@@ -611,7 +611,7 @@ def confirm():
                         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                         text-align: center; 
                         margin-top: 30px;
-                        background-color: #f0f2f5;
+                        background-color: black;
                         color: #333;
                     }
                     .container {
