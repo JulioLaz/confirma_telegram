@@ -686,7 +686,8 @@ def confirm():
                         
                         <div class="contact-info">
                           <div style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                          <img src="{{ url_for('static', filename='whatsapp_24.png') }}" alt="WhatsApp Icon" width="24" height="24">
+                          <img src="https://raw.githubusercontent.com/JulioLaz/confirma_telegram/main/whatsapp_24.png" alt="WhatsApp Icon" width="24" height="24">
+
                            <span style="font-size: 16px;">+54 9 381 5260176</span>
                           </div>
                        </div>
