@@ -679,16 +679,17 @@ def confirm():
                     <div class="success">✅</div>
                     <h1>¡Confirmación Registrada!</h1>
                     <p>Gracias por confirmar tu correo electrónico.</p>
-                    <p>Tu información ha sido recibida correctamente y me pondré en contacto contigo a la brevedad.</p>
                     
                     <div class="profile">
                         <div class="profile-name">Julio A. Lazarte</div>
                         <div class="profile-title">Científico de Datos &amp; BI | Cucher Mercados</div>
                         
                         <div class="contact-info">
-                            <div class="contact-item">📧 julioalbertolazarte00@gmail.com</div>
-                            <div class="contact-item">📱 +54 9 381 5260176</div>
-                        </div>
+                          <div style="display: flex; align-items: center; gap: 8px;justify-content: center;">
+                           <img src="C:\JulioPrograma\BOT_TELEGRAM\BOT_TELEGRAM\whatsapp_24.png" alt="WhatsApp Icon" width="24" height="24">
+                           <span style="font-size: 16px;">+54 9 381 5260176</span>
+                          </div>
+                       </div>
                         
                         <div class="social-links">
                             <a href="#" class="social-link">Portfolio</a>
