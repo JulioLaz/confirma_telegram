@@ -515,15 +515,16 @@ def track_download():
 
     # URLs reales de descarga desde Google Drive
     urls_descarga = {
-        "presupuesto_general": "https://drive.google.com/uc?id=1ABCDEF123&export=download",
-        "por_proveedor": "https://drive.google.com/uc?id=2XYZ45678&export=download",
-        "nuevos_articulos": "https://drive.google.com/uc?id=3LMNOP890&export=download",
-        "alertas": "https://drive.google.com/uc?id=4QRS12345&export=download"
+        "presupuesto_general": "https://docs.google.com/spreadsheets/d/1HLQ23BEoa2fu5jsTAPr4qg8IVncbCG1o/export?format=xlsx",
+        "por_proveedor": "https://docs.google.com/spreadsheets/d/1wpkmu7WK_1wxNMhwj7JcZGJ_z8a63oSm/export?format=xlsx",
+        "nuevos_articulos": "https://docs.google.com/spreadsheets/d/1OFgxjmlURSp2gOeRJQUkHvhyPSR-fyol/export?format=xlsx",
+        "alertas": "https://docs.google.com/spreadsheets/d/1bC8dW7BXl9fygM6WkW9PPgqtKtNfYcGW/export?format=xlsx"
     }
+
+
 
     # Redirigir al archivo correcto o a home si no existe
     return redirect(urls_descarga.get(archivo, "/"))
-
 
 
 if __name__ == '__main__':
