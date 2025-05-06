@@ -287,17 +287,33 @@ def confirm():
                         <div class="profile-title">Científico de Datos &amp; BI | Cucher Mercados</div>
                         
                         <div class="contact-info">
-                          <div style="display: flex; align-items: center; gap: 8px;justify-content: center;">
-                          <img src="https://raw.githubusercontent.com/JulioLaz/confirma_telegram/main/whatsapp_24.png" alt="WhatsApp Icon" width="24" height="24">
+                        <div style="display: flex; align-items: center; gap: 8px; justify-content: center;">
+                            <img src="https://raw.githubusercontent.com/JulioLaz/confirma_telegram/main/whatsapp_24.png" alt="WhatsApp Icon" width="24" height="24">
+                            <span style="font-size: 16px;">+54 9 381 5260176</span>
+                        </div>
+                        </div>
 
-                           <span style="font-size: 16px;">+54 9 381 5260176</span>
-                          </div>
-                       </div>
+
                         
                         <div class="social-links">
                             <a href="#" class="social-link">Portfolio</a>
                             <a href="#" class="social-link">LinkedIn</a>
                         </div>
+
+                        <button onclick="window.close()" style="
+                            margin-top: 20px;
+                            padding: 10px 20px;
+                            background-color: #2a4365;
+                            color: white;
+                            border: none;
+                            border-radius: 6px;
+                            font-size: 14px;
+                            cursor: pointer;
+                        ">
+                            Cerrar ventana
+                        </button>
+
+
                     </div>
                 </div>
             </body>
