@@ -521,10 +521,24 @@ def track_download():
         "alertas": "https://docs.google.com/spreadsheets/d/1bC8dW7BXl9fygM6WkW9PPgqtKtNfYcGW/export?format=xlsx"
     }
 
-
-
     # Redirigir al archivo correcto o a home si no existe
     return redirect(urls_descarga.get(archivo, "/"))
+
+@app.route('/dashboard')
+@rate_limit
+def track_dashboard_access():
+    usuario = request.args.get('user', 'Desconocido')
+
+    mensaje = (
+        f"📊 <b>Dashboard accedido</b>\n"
+        f"<b>Usuario:</b> {usuario}\n"
+        f"🕒 {time.strftime('%d-%b-%Y %H:%M')}"
+    )
+    TelegramNotifier.send_message(mensaje)
+
+    # Redirigir al dashboard real (por ejemplo, Looker Studio)
+    return redirect("https://lookerstudio.google.com/reporting/1a1abd1e-a896-49bd-b8d0-fdbde4135633")
+
 
 
 if __name__ == '__main__':
