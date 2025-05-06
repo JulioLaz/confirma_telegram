@@ -321,7 +321,14 @@ def home():
         <!DOCTYPE html>
         <html>
         <head>
-            <title>Servicio de Confirmación | Julio Lazarte</title>
+
+            <script>
+                setTimeout(() => {
+                    window.close();
+                }, 3000);
+            </script>
+
+            <title>Confirmación Exitosa | Julio Lazarte</title>
             <style>
                 body { 
                     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -507,9 +514,7 @@ def track_download():
     # Mensaje oculto para Telegram
     mensaje = (
         f"📥 <b>Descarga registrada</b>\n"
-        f"<b>Archivo:</b> {archivo}\n"
-        f"<b>Usuario:</b> {usuario}\n"
-        f"🕒 {time.strftime('%d-%b-%Y %H:%M')}"
+        f"<b>Usuario:</b> {usuario} - <b>Archivo:</b> {archivo} - 🕒 {time.strftime('%d-%b-%Y %H:%M')}"
     )
     TelegramNotifier.send_message(mensaje)
 
@@ -530,9 +535,7 @@ def track_dashboard_access():
     usuario = request.args.get('user', 'Desconocido')
 
     mensaje = (
-        f"📊 <b>Dashboard accedido</b>\n"
-        f"<b>Usuario:</b> {usuario}\n"
-        f"🕒 {time.strftime('%d-%b-%Y %H:%M')}"
+        f"📊 <b>Dashboard accedido</b> - <b>Usuario:</b> {usuario} - 🕒 {time.strftime('%d-%b-%Y %H:%M')}"
     )
     TelegramNotifier.send_message(mensaje)
 
