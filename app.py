@@ -293,7 +293,6 @@ def confirm():
                         </div>
                         </div>
 
-
                         
                         <div class="social-links">
                             <a href="#" class="social-link">Portfolio</a>
@@ -535,11 +534,17 @@ def track_download():
     TelegramNotifier.send_message(mensaje)
 
     # URLs reales de descarga desde Google Drive
-    urls_descarga = {
+    urls_descarga_old = {
         "presupuesto_general": "https://docs.google.com/spreadsheets/d/1HLQ23BEoa2fu5jsTAPr4qg8IVncbCG1o/export?format=xlsx",
         "por_proveedor": "https://docs.google.com/spreadsheets/d/1wpkmu7WK_1wxNMhwj7JcZGJ_z8a63oSm/export?format=xlsx",
         "nuevos_articulos": "https://docs.google.com/spreadsheets/d/1OFgxjmlURSp2gOeRJQUkHvhyPSR-fyol/export?format=xlsx",
         "alertas": "https://docs.google.com/spreadsheets/d/1bC8dW7BXl9fygM6WkW9PPgqtKtNfYcGW/export?format=xlsx"
+    }
+    urls_descarga = {
+        "presupuesto_general": "https://docs.google.com/spreadsheets/d/1DMSwY9QmrWeVCSUqO4jiwxad4Fl8GrsW/export?format=xlsx", #https://docs.google.com/spreadsheets/d/1DMSwY9QmrWeVCSUqO4jiwxad4Fl8GrsW/edit?usp=sharing&ouid=102564936615803527081&rtpof=true&sd=true
+        "por_proveedor": "https://docs.google.com/spreadsheets/d/1hev2y2gJvubnVSLnQkgeRCQQMpSEfdSj/export?format=xlsx",
+        "nuevos_articulos": "https://docs.google.com/spreadsheets/d/1_A19a5jhmcgL3rRMu2wivxsX-WYjSMvb/export?format=xlsx", #https://docs.google.com/spreadsheets/d/1_A19a5jhmcgL3rRMu2wivxsX-WYjSMvb/edit?usp=sharing&ouid=102564936615803527081&rtpof=true&sd=true
+        "alertas": "https://docs.google.com/spreadsheets/d/16htGVdOzVtoKm7-ipqT2XET5z_1MUMp6/export?format=xlsx" #https://docs.google.com/spreadsheets/d/16htGVdOzVtoKm7-ipqT2XET5z_1MUMp6/edit?usp=sharing&ouid=102564936615803527081&rtpof=true&sd=true
     }
 
     # Redirigir al archivo correcto o a home si no existe
