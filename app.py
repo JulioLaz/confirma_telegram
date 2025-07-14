@@ -1931,8 +1931,9 @@ def track_dashboard_access():
     )
     TelegramNotifier.send_message(mensaje)
 
-    # Redirigir al dashboard real
-    return redirect("https://lookerstudio.google.com/reporting/1a1abd1e-a896-49bd-b8d0-fdbde4135633")
+    # Redirigir al dashboard real: https://lookerstudio.google.com/reporting/9a19cf32-a08e-4a02-92a6-da2f2930a90a
+    # return redirect("https://lookerstudio.google.com/reporting/1a1abd1e-a896-49bd-b8d0-fdbde4135633") 
+    return redirect("https://lookerstudio.google.com/reporting/9a19cf32-a08e-4a02-92a6-da2f2930a90a")
 
 
 @app.route('/')
