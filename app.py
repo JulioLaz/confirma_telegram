@@ -88,7 +88,7 @@ class EmailAuthManager:
             "compras@dongaston.com.ar": "Eduardo", 
             "dariocividini@dongaston.com.ar": "Dario",
             "acasella@dongaston.com.ar": "Alberto",
-            "crisaguirrearmand@gmail.com"
+            "crisaguirrearmand@gmail.com": "Cristina"
         }
         
         self.last_update = time.time()
