@@ -73,7 +73,8 @@ class EmailAuthManager:
             "jacosta@dongaston.com.ar",
             "compras@dongaston.com.ar",
             "dariocividini@dongaston.com.ar",
-            "acasella@dongaston.com.ar"
+            "acasella@dongaston.com.ar",
+            "crisaguirrearmand@gmail.com"
         }
         
         self.nombres_por_email = {
@@ -86,7 +87,8 @@ class EmailAuthManager:
             "jacosta@dongaston.com.ar": "Julio",
             "compras@dongaston.com.ar": "Eduardo", 
             "dariocividini@dongaston.com.ar": "Dario",
-            "acasella@dongaston.com.ar": "Alberto"
+            "acasella@dongaston.com.ar": "Alberto",
+            "crisaguirrearmand@gmail.com"
         }
         
         self.last_update = time.time()
