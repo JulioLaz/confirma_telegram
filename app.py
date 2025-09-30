@@ -74,7 +74,7 @@ class EmailAuthManager:
             "compras@dongaston.com.ar",
             "dariocividini@dongaston.com.ar",
             "acasella@dongaston.com.ar",
-            "cristinaaguirre@dongaston.com.ar.com"
+            "cristinaaguirre@dongaston.com.ar"
             # "crisaguirrearmand@gmail.com"
         }
         
